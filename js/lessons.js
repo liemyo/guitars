@@ -1,5 +1,5 @@
 // Kurikulum bertahap dengan tautan ke alat lain dan checklist progres.
-import { h, store, icon } from './ui.js?v=20261030111205';
+import { h, store, icon } from './ui.js?v=20261031142813';
 
 const LESSONS = [
   { lvl: 'Pemula', items: [

@@ -1,7 +1,7 @@
 // Tuner mikrofon dengan jarum bergaya pendulum metronom.
-import { TUNINGS, freqToMidi, midiToFreq, pitchLabel, noteName, pretty } from './music.js?v=20261030111205';
-import { ac, tone } from './audio.js?v=20261030111205';
-import { h, icon, btn, select, seg, store, field } from './ui.js?v=20261030111205';
+import { TUNINGS, freqToMidi, midiToFreq, pitchLabel, noteName, pretty } from './music.js?v=20261031142813';
+import { ac, tone } from './audio.js?v=20261031142813';
+import { h, icon, btn, select, seg, store, field } from './ui.js?v=20261031142813';
 
 const S = { tuning: store.get('tuning', 'std'), a4: store.get('a4', 440), mode: 'auto', target: 0, done: new Set() };
 
@@ -180,6 +180,7 @@ export function initTuner(root) {
 
   root.append(
     h('div', { class: 'page-head' }, h('h1', {}, 'Tuner'), h('p', {}, 'Setel tiap senar lewat mikrofon. Jarum berayun seperti metronom: tengah dan hijau berarti nada sudah pas.')),
+    h('div', { class: 'tn-grid' },
     h('div', { class: 'card tn-main' },
       h('div', { class: 'tn-controls' }, field('Tuning', tuningSel), field('Kalibrasi', a4Sel), field('Mode', modeSeg)),
       gauge,
@@ -188,6 +189,7 @@ export function initTuner(root) {
       h('div', { class: 'tn-actions' }, micBtn),
       trace,
     ),
+    h('div', { class: 'tn-side' },
     h('div', { class: 'card' },
       h('h3', {}, 'Senar'),
       h('p', { class: 'muted' }, 'Ketuk senar untuk mendengar nada referensi dan mengunci tuner ke senar itu. Tanda centang muncul setelah senar stabil pas.'),
@@ -197,7 +199,7 @@ export function initTuner(root) {
         h('li', {}, 'Selalu setel dari bawah ke atas nada: jika terlalu tinggi, kendurkan dulu sedikit di bawah target lalu naikkan perlahan. Senar lebih stabil.'),
         h('li', {}, 'Petik dengan kekuatan sedang di dekat lubang suara, lalu biarkan nada berbunyi. Matikan senar lain agar tidak ikut bergetar.'),
         h('li', {}, 'Setelah semua senar pas, cek ulang senar 6 sampai 1. Perubahan tegangan satu senar sedikit memengaruhi senar lain.'),
-        h('li', {}, 'Cek intonasi: harmonik di fret 12 harus sama dengan nada tekan di fret 12. Jika berbeda, setelan saddle perlu diatur.'))),
+        h('li', {}, 'Cek intonasi: harmonik di fret 12 harus sama dengan nada tekan di fret 12. Jika berbeda, setelan saddle perlu diatur.'))))),
   );
   drawStrings();
 }

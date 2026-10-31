@@ -215,6 +215,12 @@ dl.kv dd { margin: 0; }
 .tn-str small { color: var(--muted); font-variant-numeric: tabular-nums; }
 .tn-str .ok { position: absolute; top: 6px; right: 6px; color: var(--ok); display: none; }
 .tn-str.done { border-color: var(--ok); background: var(--ok-soft); }
+/* tuner + strings + tips side by side so the whole tuner fits one screen */
+.tn-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+.tn-side { display: flex; flex-direction: column; gap: 16px; }
+.tn-side .tn-strings { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.tn-grid .gauge { max-width: 400px; }
+@media (max-width: 1000px) { .tn-grid { grid-template-columns: minmax(0, 1fr); } .tn-side .tn-strings { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
 .tn-str.done .ok { display: block; }
 .tn-str.on { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
 .tn-str.hear { border-color: var(--accent); }

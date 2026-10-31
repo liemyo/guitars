@@ -1,5 +1,5 @@
 // Helper DOM, ikon garis, fretboard SVG, diagram akor, dan tab.
-import { pretty } from './music.js?v=20261030111205';
+import { pretty } from './music.js?v=20261031142813';
 
 export function h(tag, attrs = {}, ...kids) {
   const el = document.createElement(tag);

@@ -1,10 +1,10 @@
 // Halaman melodi: daftar lagu/lick/latihan, tab, fretboard scale, playback lead + iringan.
-import { STD, parsePitch, pcOf, mod12, scaleById, spellScale, intervalName, pretty, noteName } from './music.js?v=20261030111205';
-import { pluck, strum, drum, click, Transport, setLeadTone, getLeadTone, setVolume } from './audio.js?v=20261030111205';
-import { h, btn, select, seg, field, store, fretboard, tabView, icon } from './ui.js?v=20261030111205';
-import { bestVoicing } from './chorddata.js?v=20261030111205';
-import { SONGS, CATS } from './songdata.js?v=20261030111205';
-import { scalePositions } from './scales.js?v=20261030111205';
+import { STD, parsePitch, pcOf, mod12, scaleById, spellScale, intervalName, pretty, noteName } from './music.js?v=20261031142813';
+import { pluck, strum, drum, click, Transport, setLeadTone, getLeadTone, setVolume } from './audio.js?v=20261031142813';
+import { h, btn, select, seg, field, store, fretboard, tabView, icon } from './ui.js?v=20261031142813';
+import { bestVoicing } from './chorddata.js?v=20261031142813';
+import { SONGS, CATS } from './songdata.js?v=20261031142813';
+import { scalePositions } from './scales.js?v=20261031142813';
 
 const MODS = /^(.+?)(?::([\d.]+))?([hpsbq~m]*)$/;
 const snap = (d) => (Math.abs(d * 3 - Math.round(d * 3)) < 0.02 ? Math.round(d * 3) / 3 : d);

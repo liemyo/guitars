@@ -1,12 +1,12 @@
-import { h, icon, store, $, $$ } from './ui.js?v=20261030111205';
-import { initTuner } from './tuner.js?v=20261030111205';
-import { initScales } from './scales.js?v=20261030111205';
-import { initSongs } from './songs.js?v=20261030111205';
-import { initChords } from './chords.js?v=20261030111205';
-import { initPractice } from './practice.js?v=20261030111205';
-import { initLessons } from './lessons.js?v=20261030111205';
-import { SONGS } from './songdata.js?v=20261030111205';
-import { ac } from './audio.js?v=20261030111205';
+import { h, icon, store, $, $$ } from './ui.js?v=20261031142813';
+import { initTuner } from './tuner.js?v=20261031142813';
+import { initScales } from './scales.js?v=20261031142813';
+import { initSongs } from './songs.js?v=20261031142813';
+import { initChords } from './chords.js?v=20261031142813';
+import { initPractice } from './practice.js?v=20261031142813';
+import { initLessons } from './lessons.js?v=20261031142813';
+import { SONGS } from './songdata.js?v=20261031142813';
+import { ac } from './audio.js?v=20261031142813';
 
 const PAGES = [
   { id: 'tuner', name: 'Tuner', ic: 'tuner', init: initTuner },

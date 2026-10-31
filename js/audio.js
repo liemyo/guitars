@@ -1,5 +1,5 @@
 // Mesin suara: gitar sintetis (Karplus-Strong), bass, drum, klik metronom, dan transport.
-import { midiToFreq } from './music.js?v=20261030111205';
+import { midiToFreq } from './music.js?v=20261031142813';
 
 let ctx = null;
 let master, bus = {};

@@ -1,5 +1,5 @@
 // Data kunci gitar: bentuk terbuka (tetap) + bentuk geser (movable) untuk semua root.
-import { STD, pcOf, mod12, noteName, useFlats, QUAL, ROOTS } from './music.js?v=20261030111205';
+import { STD, pcOf, mod12, noteName, useFlats, QUAL, ROOTS } from './music.js?v=20261031142813';
 
 const X = -1;
 // Kunci terbuka. f = fret senar 6 -> 1, g = jari (0 = terbuka/mute, 5 = jempol)

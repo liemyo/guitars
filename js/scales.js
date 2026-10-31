@@ -1,8 +1,8 @@
 // Pola scale di fretboard: posisi (box / 3 nada per senar), seluruh neck, pola latihan + playback.
-import { SCALES, scaleById, ROOTS, STD, mod12, pcOf, spellScale, intervalName, pretty, noteName, useFlats, QUAL } from './music.js?v=20261030111205';
-import { pluck, click, Transport, strum } from './audio.js?v=20261030111205';
-import { h, btn, select, seg, field, store, fretboard, tabView } from './ui.js?v=20261030111205';
-import { bestVoicing } from './chorddata.js?v=20261030111205';
+import { SCALES, scaleById, ROOTS, STD, mod12, pcOf, spellScale, intervalName, pretty, noteName, useFlats, QUAL } from './music.js?v=20261031142813';
+import { pluck, click, Transport, strum } from './audio.js?v=20261031142813';
+import { h, btn, select, seg, field, store, fretboard, tabView } from './ui.js?v=20261031142813';
+import { bestVoicing } from './chorddata.js?v=20261031142813';
 
 // Posisi n-nada-per-senar mulai dari tiap derajat scale di senar 6.
 function npsPositions(rootPc, iv, nps) {

@@ -1,8 +1,8 @@
 // Kunci: kunci dasar, penjelajah variasi (dasar/menengah/lanjut), progresi, pola genjreng, capo & transpose.
-import { ROOTS, QUAL, pcOf, mod12, noteName, useFlats, pretty, chordToneName, parseChord } from './music.js?v=20261030111205';
-import { strum, pluck, click, drum, Transport } from './audio.js?v=20261030111205';
-import { h, btn, select, seg, field, store, chordDiagram, icon } from './ui.js?v=20261030111205';
-import { OPEN_CHORDS, voicingsFor, bestVoicing, QUALS_BY_LEVEL } from './chorddata.js?v=20261030111205';
+import { ROOTS, QUAL, pcOf, mod12, noteName, useFlats, pretty, chordToneName, parseChord } from './music.js?v=20261031142813';
+import { strum, pluck, click, drum, Transport } from './audio.js?v=20261031142813';
+import { h, btn, select, seg, field, store, chordDiagram, icon } from './ui.js?v=20261031142813';
+import { OPEN_CHORDS, voicingsFor, bestVoicing, QUALS_BY_LEVEL } from './chorddata.js?v=20261031142813';
 
 const LVL = ['', 'Dasar', 'Menengah', 'Lanjut'];
 const playV = (v, o = {}) => strum(v.midi.filter((m) => m != null), 0, { vel: 0.6, ring: true, spread: 0.02, ...o });

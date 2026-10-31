@@ -1,7 +1,7 @@
 // Latihan: metronom, latihan pendengaran (interval/akor), kuis nada fretboard.
-import { STD, mod12, noteName, pretty, QUAL } from './music.js?v=20261030111205';
-import { click, pluck, strum, Transport, now } from './audio.js?v=20261030111205';
-import { h, btn, select, seg, field, store, fretboard } from './ui.js?v=20261030111205';
+import { STD, mod12, noteName, pretty, QUAL } from './music.js?v=20261031142813';
+import { click, pluck, strum, Transport, now } from './audio.js?v=20261031142813';
+import { h, btn, select, seg, field, store, fretboard } from './ui.js?v=20261031142813';
 
 export function initPractice(root) {
   const S = { tab: store.get('pr.tab', 'metro') };
